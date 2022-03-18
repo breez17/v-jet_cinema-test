@@ -1,0 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: $lato;
+  font-weight: 400;
+}
+
+.container {
+  @media screen and (min-width: 1200px) {
+    max-width: 1149px;
+    margin: 0 auto;
+  }
+}
