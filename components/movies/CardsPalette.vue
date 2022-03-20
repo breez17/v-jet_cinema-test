@@ -1,15 +1,41 @@
 <template>
   <div class="c-cards">
-
+    <div class="container">
+      <div class="c-cards__palette">
+        <FilmCard
+            v-for="film of movies"
+            :key="film.id"
+            :film="film"
+        />
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+import FilmCard from "./FilmCard";
+import { mapState } from "vuex";
 export default {
-  name: "CardsPalette"
+  name: "CardsPalette",
+  components: {
+    FilmCard
+  },
+  computed: {
+    ...mapState('movies', [
+      'movies'
+    ]),
+
+  },
 }
 </script>
 
-<style scoped>
-
+<style lang="scss">
+.c-cards {
+  &__palette {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px 15px;
+    padding: 10px;
+  }
+}
 </style>

@@ -5,9 +5,44 @@
   font-weight: 400;
 }
 
+body {
+  background: var(--black);
+}
+
+a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  display: flex;
+  margin-top: 5px;
+  align-items: center;
+  .key {
+    color: var(--gray);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    font-family: $fira;
+    letter-spacing: 0.15px;
+  }
+  .val {
+    margin-left: 5px;
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 30px;
+    font-family: $lato;
+    letter-spacing: 0.25px;
+    text-decoration: none;
+  }
+}
+
 .container {
-  @media screen and (min-width: 1200px) {
-    max-width: 1149px;
+  background: var(--white);
+  @media screen and (min-width: 1650px) {
+    max-width: 1650px;
     margin: 0 auto;
   }
 }

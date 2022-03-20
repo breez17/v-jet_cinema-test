@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .body-2 {
-  color: var(--white);
+  color: var(--black);
   font-size: 16px;
   font-weight: 700;
   line-height: 30px;
@@ -54,6 +54,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.15px;
+  color: var(--gray);
 }
 
 .subtitle-1 {
@@ -68,10 +69,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .subtitle-2 {
   color: var(--gray);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 18px;
   font-family: $fira;
+  letter-spacing: 0.15px;
 }
 
 .btn-text {

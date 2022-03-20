@@ -1,6 +1,6 @@
 <template>
   <div class="c-header">
-    <div class="container">
+    <div class="container c-header-container">
       <div class="c-header__wrapper">
         <nuxt-link to="/" class="c-header__wrapper-logo">
           <img class="c-header__wrapper-logo_icon" src="@/assets/icons/play.svg" alt="logo">
@@ -11,6 +11,7 @@
               active-class="c-header__wrapper-navigations_link--active"
               class="c-header__wrapper-navigations_link body-1"
               to="/"
+              exact
           >
           Movies
           </nuxt-link>
@@ -35,8 +36,11 @@ export default {
 
 <style lang="scss">
 .c-header {
-  background: var(--lightBlue);
+  background: var(--orange);
   padding: 15px 0;
+  &-container {
+    background: none;
+  }
   &__wrapper {
     display: flex;
     align-items: center;
