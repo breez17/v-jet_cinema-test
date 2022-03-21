@@ -20,7 +20,7 @@
                       class="c-seats-modal-body__seats-item"
                       :class="[
                           { 'c-seats-modal-body__seats-item--close': !seat.is_free || bookSeat.seat === seat.seat && bookSeat.row === row[0].row },
-                          { 'c-seats-modal-body__seats-item--open': seat.is_free || bookSeat.seat != seat.seat && bookSeat.row != row[0].row }
+                          { 'c-seats-modal-body__seats-item--open': seat.is_free || bookSeat.seat !== seat.seat && bookSeat.row !== row[0].row }
                       ]"
                   >
                   </span>
