@@ -1,13 +1,13 @@
 <template>
   <div class="c-card">
     <div class="c-card__holder">
-      <div class="c-card__holder-img">
+      <nuxt-link :to="{ path: `/film/`, query: { id: film.id } }" class="c-card__holder-img">
         <img
             class="c-card__holder-img_picture"
             :src="film.image"
             alt=""
         />
-      </div>
+      </nuxt-link>
       <div class="c-card__holder-info">
           <nuxt-link
               :to="{ path: `/film/`, query: { id: film.id } }"
@@ -45,9 +45,19 @@ export default {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+      align-items: center;
+    }
     &-img {
       &_picture {
         width: 200px;
+        @media screen and (max-width: 670px) {
+          width: 140px;
+        }
+        @media screen and (max-width: 500px) {
+          width: 100%;
+        }
       }
     }
     &-info {

@@ -13,14 +13,14 @@
               to="/"
               exact
           >
-          Movies
+          Фільми
           </nuxt-link>
           <nuxt-link
               active-class="c-header__wrapper-navigations_link--active"
               class="c-header__wrapper-navigations_link body-1"
               to="/sessions"
           >
-            Sessions
+            Сеанси
           </nuxt-link>
         </div>
       </div>

@@ -36,6 +36,9 @@ export default {
     grid-template-columns: 1fr 1fr;
     grid-gap: 25px 15px;
     padding: 10px;
+    @media screen and (max-width: 1440px) {
+      grid-template-columns: 1fr;
+    }
   }
 }
 </style>

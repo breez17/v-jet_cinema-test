@@ -26,8 +26,12 @@ li {
     line-height: 18px;
     font-family: $fira;
     letter-spacing: 0.15px;
+    @media screen and (max-width: 670px) {
+      font-size: 12px;
+    }
   }
   .val {
+    display: flex;
     margin-left: 5px;
     color: var(--black);
     font-size: 14px;
@@ -36,6 +40,12 @@ li {
     font-family: $lato;
     letter-spacing: 0.25px;
     text-decoration: none;
+    @media screen and (max-width: 670px) {
+      font-size: 12px;
+    }
+  }
+  .age_hint {
+    margin-left: 10px;
   }
 }
 
@@ -45,4 +55,44 @@ li {
     max-width: 1650px;
     margin: 0 auto;
   }
+  @media screen and (max-width: 1650px) {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 1440px) {
+    max-width: 1180px;
+  }
+  @media screen and (max-width: 1200px) {
+    max-width: 1040px;
+  }
+  @media screen and (max-width: 1100px) {
+    max-width: 920px;
+  }
+  @media screen and (max-width: 970px) {
+    max-width: 780px;
+  }
+  @media screen and (max-width: 800px) {
+    max-width: 90%;
+  }
+  @media screen and (max-width: 670px) {
+    max-width: 95%;
+  }
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+.modal-enter {
+  opacity: 0;
+}
+
+.modal-leave-active {
+  opacity: 0;
+}
+
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }

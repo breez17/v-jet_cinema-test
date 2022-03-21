@@ -21,6 +21,7 @@
     <input
       :type="type"
       class="v-text-field__input"
+      @keyup.enter="$emit('onEnter', $event.target.value)"
       :class="[
         {'v-text-field__input--prepend-icon': prependIconSrc},
         size ? `v-text-field__input--${size}` : '',
@@ -126,11 +127,11 @@ export default {
     background: #FEFEFE;
     border: 1px solid var(--gray);
     border-radius: 8px;
-    padding: 8px 16px;
+    padding: 8px 0 8px 16px;
     font-size: 16px;
     font-family: $lato;
     font-weight: 700;
-    caret-color: var(--lightBlue);
+    caret-color: var(--orange);
 
     &::placeholder {
       font-family: $lato;
@@ -144,11 +145,11 @@ export default {
     }
 
     &--sm {
-      height: 40px;
+      height: 25px;
     }
 
     &--md {
-      height: 48px;
+      height: 35px;
     }
 
     &--prepend-icon {

@@ -1,14 +1,19 @@
 <template>
   <div>
+    <SearchWithFilter></SearchWithFilter>
     <CardsPalette></CardsPalette>
   </div>
 </template>
 
 <script>
-import Header from "../components/Header";
-import CardsPalette from "../components/movies/CardsPalette";
+import CardsPalette from "@/components/movies/CardsPalette";
+import SearchWithFilter from "@/components/SearchWithFilter";
+
 export default {
   name: 'Home',
-  components: {CardsPalette, Header},
+  components: {
+    SearchWithFilter,
+    CardsPalette,
+  },
 }
 </script>

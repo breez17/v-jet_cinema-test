@@ -11,6 +11,9 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 32px;
   font-family: $lato;
   letter-spacing: 0.5px;
+  @media screen and (max-width: 670px) {
+    font-size: 14px;
+  }
 }
 
 .body-2 {
@@ -20,34 +23,52 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 30px;
   font-family: $lato;
   letter-spacing: 0.25px;
+  @media screen and (max-width: 670px) {
+    font-size: 12px;
+  }
 }
 
 .headline-1 {
   font-size: 96px;
   line-height: 80px;
   letter-spacing: -1.5px;
+  @media screen and (max-width: 670px) {
+    font-size: 50px;
+  }
 }
 
 .headline-2 {
   font-size: 60px;
   line-height: 72px;
   letter-spacing: -0.5px;
+  @media screen and (max-width: 670px) {
+    font-size: 40px;
+  }
 }
 
 .headline-3 {
   font-size: 48px;
   line-height: 58px;
+  @media screen and (max-width: 670px) {
+    font-size: 30px;
+  }
 }
 
 .headline-4 {
   font-size: 34px;
   line-height: 36px;
   letter-spacing: 0.25px;
+  @media screen and (max-width: 670px) {
+    font-size: 20px;
+  }
 }
 
 .headline-5 {
   font-size: 24px;
   line-height: 24px;
+  @media screen and (max-width: 670px) {
+    font-size: 18px;
+  }
 }
 
 .headline-6 {
@@ -55,6 +76,9 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 24px;
   letter-spacing: 0.15px;
   color: var(--gray);
+  @media screen and (max-width: 670px) {
+    font-size: 16px;
+  }
 }
 
 .subtitle-1 {
@@ -65,6 +89,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $fira;
   letter-spacing: 4px;
   text-transform: uppercase;
+  @media screen and (max-width: 670px) {
+    font-size: 14px;
+  }
 }
 
 .subtitle-2 {
@@ -74,6 +101,9 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 18px;
   font-family: $fira;
   letter-spacing: 0.15px;
+  @media screen and (max-width: 670px) {
+    font-size: 14px;
+  }
 }
 
 .btn-text {
@@ -83,6 +113,9 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 16px;
   font-family: $fira;
   letter-spacing: 0.75px;
+  @media screen and (max-width: 670px) {
+    font-size: 12px;
+  }
 }
 
 .caption {
@@ -92,6 +125,9 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 12px;
   font-family: $fira;
   letter-spacing: 1px;
+  @media screen and (max-width: 670px) {
+    font-size: 12px;
+  }
 }
 
 .overline-1 {

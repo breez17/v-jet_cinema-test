@@ -38,26 +38,10 @@
 export default {
   name: 'SelectField',
   props: {
-    label: {
-      type: String,
-      default: () => {
-        return ''
-      }
-    },
-    value: {
-      type: [String, Number],
-      required: true
-    },
-    prependIconSrc: {
-      type: String,
-      default: ''
-    },
-    size: {
-      type: String,
-      default: () => {
-        return ''
-      }
-    },
+    label: String,
+    value: [String, Number],
+    prependIconSrc: String,
+    size: String,
     options: {
       type: Array,
       required: true
@@ -90,7 +74,7 @@ export default {
   &__select {
     width: 100%;
     height: 48px;
-    border: 1px solid #C0C7DC;
+    border: 1px solid var(--gray);
     border-radius: 8px;
     padding: 8px 24px 8px 16px;
     font-size: 16px;
@@ -100,14 +84,12 @@ export default {
 
     &--sm {
       height: 40px;
-      background: 97% 10px/20px no-repeat url(~assets/icons/icon-chevron-down.svg) #FEFEFE;
-      //padding: 8px 24px 8px 16px;
+      background: 97% 12px/20px no-repeat url(~assets/icons/icon-chevron-down.svg) #FEFEFE;
     }
 
     &--md {
       height: 48px;
       background: 97% 10px/20px no-repeat url(~assets/icons/icon-chevron-down.svg) #FEFEFE;
-      //padding: 8px 24px 8px 16px;
     }
 
     &--prepend-icon {
